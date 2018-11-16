@@ -7,7 +7,6 @@ class DeckSpider(Spider):
     allowed_domains = ["mtggoldfish.com"]
     start_urls = ["https://www.mtggoldfish.com/metagame/standard/full#paper"]
 
-
     def parse(self, response):
         decks = response.xpath('//div[2]/div/h2/span[2]')
 

@@ -11,3 +11,8 @@ import scrapy
 class DeckpickerItem(scrapy.Item):
     title = scrapy.Field()
     url = scrapy.Field()
+
+class DeckpickerCard(scrapy.Item):
+    title = scrapy.Field()
+    count = scrapy.Field()
+    price = scrapy.Field()
